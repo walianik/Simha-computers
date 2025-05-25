@@ -1,0 +1,60 @@
+.navbar {
+  background: linear-gradient(to right, #1c1c1c, #2f2f2f);
+  color: #f5f5dc; /* cream */
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05);
+}
+.navbar a {
+  color: #f5f5dc;
+}
+
+.navbar a:hover {
+  color: #f9f1e7; /* same as default */
+  transform: scale(1.05); /* optional: adds subtle interaction */
+}
+
+
+.about-section {
+  background: linear-gradient(to bottom right, #262b33cf, #637570);
+  padding: 80px 20px;
+  color: #1f1f1f;
+  text-align: left;
+}
+
+.container {
+  /* max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px; */
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #b3874d; /* muted gold */
+  margin-bottom: 30px;
+}
+
+.about-text,
+.mission-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.check-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.check-list li {
+  padding-left: 1.2em;
+  position: relative;
+}
