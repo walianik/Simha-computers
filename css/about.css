@@ -1,11 +1,13 @@
 .navbar {
-  background: linear-gradient(to right, #1c1c1c, #2f2f2f);
   color: #f5f5dc; /* cream */
-  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05);
+  /* box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05); */
+  position: absolute;
+  width: 100%;
 }
 .navbar a {
-  color: #f5f5dc;
+  color: white;
 }
+
 
 .navbar a:hover {
   color: #f9f1e7; /* same as default */
@@ -14,9 +16,9 @@
 
 
 .about-section {
-  background: linear-gradient(to bottom right, #262b33cf, #637570);
+  background: linear-gradient(to bottom right, #262b33cf, #121212);
   padding: 80px 20px;
-  color: #1f1f1f;
+  color: white;
   text-align: left;
 }
 
@@ -42,7 +44,7 @@
 
 .sub-heading {
   font-size: 1.5rem;
-  color: #333;
+  color: white;
   margin-top: 30px;
   margin-bottom: 15px;
 }

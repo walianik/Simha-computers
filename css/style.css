@@ -1,10 +1,11 @@
 .navbar {
-  background: linear-gradient(to right, #1c1c1c, #2f2f2f);
   color: #f5f5dc; /* cream */
-  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05);
+  /* box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05); */
+  position: absolute;
+  width: 100%;
 }
 .navbar a {
-  color: #f5f5dc;
+  color: white;
 }
 
 
@@ -130,3 +131,32 @@
 .flipped {
     transform: rotateY(180deg);
 }
+
+.stats-box {
+      background-color: #f4f3ff;
+      padding: 40px 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .stats-title {
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+    }
+    .stats-value {
+      font-size: 36px;
+      font-weight: bold;
+      color: #1d1d1f;
+      margin-top: 10px;
+    }
+
+
+
+
+
+/* remove top features
+request quote 
+mobile view 
+route on pricing after login */

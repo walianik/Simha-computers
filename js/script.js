@@ -148,3 +148,23 @@ setInterval(() => {
   tiles[randomIndex].classList.add("flipped");
 }, 4000);
 
+
+const counters = document.querySelectorAll(".stats-value");
+  let started = false;
+
+  const observer = new IntersectionObserver(entries => {
+    if (!started && entries[0].isIntersecting) {
+      counters.forEach(counter => {
+        const endVal = parseInt(counter.getAttribute("data-count"));
+        const countUp = new CountUp.CountUp(counter, endVal, { suffix: "+" });
+        if (!countUp.error) {
+          countUp.start();
+        }
+      });
+      started = true;
+    }
+  }, {
+    threshold: 0.5,
+  });
+
+  observer.observe(document.getElementById("stats-section"));

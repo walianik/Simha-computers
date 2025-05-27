@@ -1,0 +1,23 @@
+.navbar {
+  color: #f5f5dc; /* cream */
+  /* box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05); */
+  position: absolute;
+  width: 100%;
+}
+.navbar a {
+  color: white;
+}
+
+
+.navbar a:hover {
+  color: #f9f1e7; /* same as default */
+  transform: scale(1.05); /* optional: adds subtle interaction */
+}
+
+
+.contact-container {
+  background: linear-gradient(to bottom right, #262b33cf, #121212);
+  padding: 80px 20px;
+  color: white;
+  text-align: left;
+}
