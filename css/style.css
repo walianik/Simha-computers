@@ -1,17 +1,21 @@
 .navbar {
-  color: #f5f5dc; /* cream */
-  /* box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05); */
-  position: absolute;
-  width: 100%;
+    color: #f5f5dc;
+    /* cream */
+    /* box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05); */
+    position: absolute;
+    width: 100%;
 }
+
 .navbar a {
-  color: white;
+    color: white;
 }
 
 
 .navbar a:hover {
-  color: #f9f1e7; /* same as default */
-  transform: scale(1.05); /* optional: adds subtle interaction */
+    color: #f9f1e7;
+    /* same as default */
+    transform: scale(1.05);
+    /* optional: adds subtle interaction */
 }
 
 #hero {
@@ -133,25 +137,91 @@
 }
 
 .stats-box {
-      background-color: #f4f3ff;
-      padding: 40px 20px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
-    }
-    .stats-title {
-      font-size: 18px;
-      font-weight: 500;
-      color: #333;
-    }
-    .stats-value {
-      font-size: 36px;
-      font-weight: bold;
-      color: #1d1d1f;
-      margin-top: 10px;
-    }
+    background-color: #f4f3ff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
 
+.stats-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.stats-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1d1d1f;
+    margin-top: 10px;
+}
+
+
+/* ─── testimonial section overrides ─────────────────────────────────── */
+
+/* (1) Avatar styling – make sure the circle is exactly ~120×120px */
+.testimonial-avatar {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* (2) Text styling – keep line-height tight, all‐caps for heading if needed */
+#testimonials h2 {
+    font-size: 2.75rem;
+    line-height: 1.2;
+}
+
+.testimonial-text {
+    font-size: 1.125rem;
+    /* “lead” is 1.25rem by default; tweak as needed */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* (3) Quote-icon box */
+.quote-box {
+    width: 60px;
+    height: 60px;
+    background-color: #FF4500;
+    /* bright orange */
+    border-radius: 8px;
+}
+
+.quote-icon {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+/* (4) Carousel indicators (dots) customization */
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #555;
+    /* inactive dot color */
+}
+
+.carousel-indicators .active {
+    background-color: #FF4500;
+    /* active dot color */
+    width: 14px;
+    height: 14px;
+}
+
+/* (5) Override Bootstrap’s default arrow colors (optional) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    /* makes the arrow white, since background is black */
+}
+
+.carousel-item {
+    margin-bottom: 2em;
+}
 
 
 

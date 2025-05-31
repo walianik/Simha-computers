@@ -168,3 +168,15 @@ const counters = document.querySelectorAll(".stats-value");
   });
 
   observer.observe(document.getElementById("stats-section"));
+
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+
