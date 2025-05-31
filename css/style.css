@@ -1,0 +1,232 @@
+.navbar {
+    color: #f5f5dc;
+    /* cream */
+    /* box-shadow: 0 3px 10px rgba(255, 255, 255, 0.05); */
+    position: absolute;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+}
+
+
+.navbar a:hover {
+    color: #f9f1e7;
+    /* same as default */
+    transform: scale(1.05);
+    /* optional: adds subtle interaction */
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.option-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.tech-card {
+    flex: 0 0 300px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    position: relative;
+    transition: transform 0.3s ease;
+    transition: background 1s ease, color 1s ease, transform 0.3s ease;
+
+}
+
+.tech-card:hover {
+    transform: scale(1.05);
+}
+
+.tech-card img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
+}
+
+.tech-card:hover img {
+    opacity: 0.3;
+}
+
+
+.tech-scroll-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.tech-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+
+
+.flip-tiles-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 90px;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #bfa76f);
+
+}
+
+.flip-tile {
+    background: transparent;
+    width: 230px;
+    height: 300px;
+    perspective: 1200px;
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.flip-front img,
+.flip-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.stats-box {
+    background-color: #f4f3ff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.stats-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.stats-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1d1d1f;
+    margin-top: 10px;
+}
+
+
+/* ─── testimonial section overrides ─────────────────────────────────── */
+
+/* (1) Avatar styling – make sure the circle is exactly ~120×120px */
+.testimonial-avatar {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* (2) Text styling – keep line-height tight, all‐caps for heading if needed */
+#testimonials h2 {
+    font-size: 2.75rem;
+    line-height: 1.2;
+}
+
+.testimonial-text {
+    font-size: 1.125rem;
+    /* “lead” is 1.25rem by default; tweak as needed */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* (3) Quote-icon box */
+.quote-box {
+    width: 60px;
+    height: 60px;
+    background-color: #FF4500;
+    /* bright orange */
+    border-radius: 8px;
+}
+
+.quote-icon {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+/* (4) Carousel indicators (dots) customization */
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #555;
+    /* inactive dot color */
+}
+
+.carousel-indicators .active {
+    background-color: #FF4500;
+    /* active dot color */
+    width: 14px;
+    height: 14px;
+}
+
+/* (5) Override Bootstrap’s default arrow colors (optional) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    /* makes the arrow white, since background is black */
+}
+
+.carousel-item {
+    margin-bottom: 2em;
+}
+
+
+
+
+/* remove top features
+request quote 
+mobile view 
+route on pricing after login */
