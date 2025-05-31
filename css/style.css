@@ -5,7 +5,11 @@
     position: absolute;
     width: 100%;
 }
-
+.logo-img {
+  max-width: 200px;  /* adjust based on your placement */
+  height: 100px;
+  width: 120px;
+}
 .navbar a {
     color: white;
 }
