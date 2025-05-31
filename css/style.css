@@ -12,10 +12,8 @@
 
 
 .navbar a:hover {
-    color: #f9f1e7;
-    /* same as default */
-    transform: scale(1.05);
-    /* optional: adds subtle interaction */
+  color: #f9f1e7; /* same as default */
+  transform: scale(1.05); /* optional: adds subtle interaction */
 }
 
 #hero {
@@ -223,8 +221,54 @@
     margin-bottom: 2em;
 }
 
+.repair-section {
+  background-color: #0e0e0e;
+  color: #f0f0f0;
+}
 
+.section-title {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
 
+.section-subtitle {
+  color: #bbb;
+  font-size: 1.1rem;
+}
+
+.text-gold {
+  color: #FFD700;
+  font-weight: 600;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 400px;
+  width: 30%;
+  margin: 1em;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 90%;
+    margin: 1em auto; /* center horizontally */
+  }
+}
 
 /* remove top features
 request quote 
