@@ -158,6 +158,19 @@
     margin-top: 10px;
 }
 
+.stats-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.stats-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1d1d1f;
+    margin-top: 10px;
+}
+
 
 /* ─── testimonial section overrides ─────────────────────────────────── */
 
@@ -223,8 +236,118 @@
     margin-bottom: 2em;
 }
 
+/* ─── testimonial section overrides ─────────────────────────────────── */
 
+/* (1) Avatar styling – make sure the circle is exactly ~120×120px */
+.testimonial-avatar {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
 
+/* (2) Text styling – keep line-height tight, all‐caps for heading if needed */
+#testimonials h2 {
+    font-size: 2.75rem;
+    line-height: 1.2;
+}
+
+.testimonial-text {
+    font-size: 1.125rem;
+    /* “lead” is 1.25rem by default; tweak as needed */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* (3) Quote-icon box */
+.quote-box {
+    width: 60px;
+    height: 60px;
+    background-color: #FF4500;
+    /* bright orange */
+    border-radius: 8px;
+}
+
+.quote-icon {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+/* (4) Carousel indicators (dots) customization */
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #555;
+    /* inactive dot color */
+}
+
+.carousel-indicators .active {
+    background-color: #FF4500;
+    /* active dot color */
+    width: 14px;
+    height: 14px;
+}
+
+/* (5) Override Bootstrap’s default arrow colors (optional) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    /* makes the arrow white, since background is black */
+}
+
+.carousel-item {
+    margin-bottom: 2em;
+}
+
+.repair-section {
+  background-color: #0e0e0e;
+  color: #f0f0f0;
+}
+
+.section-title {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.section-subtitle {
+  color: #bbb;
+  font-size: 1.1rem;
+}
+
+.text-gold {
+  color: #FFD700;
+  font-weight: 600;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 400px;
+  width: 30%;
+  margin: 1em;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 90%;
+    margin: 1em auto; /* center horizontally */
+  }
+}
 
 /* remove top features
 request quote 
