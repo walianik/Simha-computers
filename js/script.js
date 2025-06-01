@@ -147,6 +147,22 @@ setInterval(() => {
   const randomIndex = Math.floor(Math.random() * tiles.length);
   tiles[randomIndex].classList.add("flipped");
 }, 4000);
+// Show/hide back-to-top button
+const backToTopBtn = document.getElementById("backToTop");
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
+
+// Scroll to top on button click
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 
 
 const counters = document.querySelectorAll(".stats-value");
